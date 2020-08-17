@@ -24,25 +24,4 @@ layout: default
 
 
 <!-------- Contact Form/Call to Action ----------->
-<section class="grid-center featured-bg padded-2">
-  <div class="col-6_sm-12 center padded-2">
-    <h3>Get in Touch</h3>
-    <p>If you would like more information, answers to your queries or even if you would like to say a quick hello: I would love to hear from you. Please use the form on the right or the email below to get in touch with me. Or you can connect with me on Facebook. I will get back to you as soon as I am able to.</p>
-    <p><strong> Email: </strong> maxine@yoursunshinewithin.com</p>
-    <p><strong> Facebook: </strong> <a href="https://www.facebook.com/Your-Sunshine-Within-336802213335882/">fb.com/your-sunshine-within</a></p>
-  </div>
-  <div class="col-6_sm-12 center padded-2">
-    <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
-  <div class="col-6_sm-12">
-    <input type="text" name="name" placeholder="Your Name">
-  </div>
-  <div class="col-6_sm-12">
-    <input type="email" name="_replyto" placeholder="Your Email">
-  </div>
-  <div class="col-12">
-    <textarea placeholder="Your Message"></textarea>
-    <input type="submit" value="Send" class="button">
-  </div>
-</form>
-  </div>
-</section>
+{% include get-in-touch.html %}
