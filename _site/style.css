@@ -1,0 +1,433 @@
+/* -------------- CSS Reset -------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid grey; */
+}
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+img {
+  max-width: 100%; /* this ensures images never break their container */
+}
+
+body {
+  /* padding-top: 3rem; */
+  color: rgb(120,120,125);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ /* this overrides the default padding and margin on gridlex elements */
+[class*=grid] {   margin: 0;  }
+[class*=col]  {   padding: 0; }
+
+
+/* ------------ Utility Styles ---------- */
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.center   {  text-align: center;   }
+
+.padded   {  padding: 5%; }
+.padded-1 { padding: 10%; }
+.padded-2 { padding: 2%; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
+
+.dark-bg {
+  background-color: #180b04;
+  color: white;
+  /* padding: 5rem; */
+}
+
+.featured-bg {
+  background-color: #425365;
+  color: white;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* --------------- Typography ------------ */
+h2 {
+  font-size: 3rem;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h3, h4, h5, h6 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h3 { font-size: 1.5rem;}
+h4 { font-size: 1rem;}
+
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+}
+
+.p2 {
+  margin-top: rem;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.small-p {font-size:0.7rem;}
+
+.highlight {
+    background-color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 2px;
+}
+
+hr { /* this is a line element */
+  border: none;
+  border-bottom: 2px solid;
+  color: #425365;
+  width: 60rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 10px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #f8ce60;
+  transition: 0.3s;
+}
+
+/* ---------- Button Styles ----------- */
+.button {
+  font-family: 'Fira Sans', sans-serif;
+  display: inline-block;
+  border: 1px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-color: white;
+  background-color: white;
+  color: grey;
+  transition: 0.8s;
+}
+
+.button:hover {
+  background-color: #425365;
+  color: white;
+}
+
+.button-2 {
+  font-family: 'Fira Sans', sans-serif;
+  display: inline-block;
+  border: 1.5px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-color: #425365;
+  color: #425365;;
+  transition: 0.8s;
+}
+
+.button-2:hover {
+  background-color: #425365;
+  color: white;
+}
+
+
+/*--------------- Header and Footer ------------ */
+header {
+  padding: 4.5vh 5%;
+  height: 80px;
+  background-color: white;
+  position: relative;
+}
+
+header nav a {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 0rem 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #f8ce60;
+}
+
+footer nav a {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  transition: 0.5s;
+}
+
+footer nav a:hover {
+  color: #f8ce60;
+}
+
+/* ----------- Hamburger Nav -------------- */
+.hamburger {
+  position: absolute;
+}
+
+.hamburger .line{
+  width: 35px;
+  height: 2px;
+  background-color: rgb(120,120,125);
+  display: block;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.hamburger {
+  font-size: 3rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 3; /* the keeps the menu in front of everything else on the page, including the mobile nav */
+  display: none;
+}
+.mobile-nav {
+  font-family: 'Fira Sans', sans-serif;
+  display: none;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  background-color: rgba(230,230,235, 0.9);
+  padding: 10%;
+}
+.mobile-nav a {
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* ---------- Font Awesome & Icons ------------ */
+.fab {        /* default styles for font awesome icons */
+  font-size: 3rem
+}
+
+.quote-icon {
+  font-size: 6rem;
+}
+
+/* ------------ Banners ------------------- */
+.banner-main {
+  background-image: url('images/home-page-banner-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  min-height: 60vh;
+}
+
+.banner-pages {
+  background-image: url('images/home-page-banner.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  min-height: 40vh;
+}
+
+.banner-badges {
+  background-image: url('images/badges-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  color: white;
+  min-height: 30vh;
+}
+
+/* ------------------ Images ---------------- */
+img { width: 300px;}
+
+.logo-banner {
+  width: 50%;
+  padding-bottom: 2%;
+}
+
+.logo-footer { width: 8%; }
+
+.illustration { width: 25%; }
+
+.badges { width: 40%; }
+.badges-2 { width: 62% }
+
+
+.side-image {
+  background-image: url(images/quote.jpeg);
+  background-size: cover;
+}
+
+.headshot {
+  background-image: url(images/maxine-headshot.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
+/* .bump-down {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: -10rem;
+  margin-right:1rem;
+  z-index:2;
+} */
+
+/* ----------- Contact Form ----------- */
+input,
+textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e8cf8b;
+  /* featured color */
+}
+
+textarea {
+  min-height: 7rem;
+}
+
+input[type="submit"] {
+  /* width: auto; */
+  display: inline-block;
+}
+
+form [class*=col-] {
+  padding: 5px;
+}
+
+
+ /* ----------- Pricing Card ---------- */
+ .pricing-card {
+   border: 2px solid #344758;
+   padding: 1rem;
+   display: block;
+   width: 100%;
+ }
+
+
+ /* --------- Carousel ----------- */
+.slider {
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* --------- Media Queries ---------- */
+@media(max-width:1026px) {
+  .mobile-hide {display: none;}
+
+  .hamburger {
+    display: block!important;
+  }
+
+  .email-signup input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .md-align {text-align: center;}
+
+  h2 {font-size: 2rem;}
+
+  .banner-main {
+   min-height: 50vh;
+   padding: 3%;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .hamburger a:not(:first-child) {display: none;}
+
+  .hamburver a.icon {
+    float: right;
+    display: block;
+  }
+
+  header {
+    position: relative;
+    display: block;
+  }
+}
