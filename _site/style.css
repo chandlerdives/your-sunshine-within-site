@@ -327,6 +327,11 @@ img { width: 300px;}
   background-size: cover;
 }
 
+.side-image-2 {
+  background-image: url(images/calm.jpg);
+  background-size: cover;
+}
+
 .headshot {
   background-image: url(images/maxine-headshot.jpg);
   background-size: cover;
