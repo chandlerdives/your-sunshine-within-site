@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('.quotes').slick({
     dots: true,
@@ -9,9 +8,3 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true
   });
-});
-
-
-$( document ).ready(function() {
-$('.no-fouc').removeClass('no-fouc');
-});

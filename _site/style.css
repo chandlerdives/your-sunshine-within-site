@@ -310,7 +310,7 @@ footer nav a:hover {
 img { width: 300px;}
 
 .logo-banner {
-  width: 50%;
+  width: 70%;
   padding-bottom: 2%;
 }
 
@@ -330,7 +330,7 @@ img { width: 300px;}
 .headshot {
   background-image: url(images/maxine-headshot.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 
 /* .bump-down {
@@ -383,29 +383,16 @@ form [class*=col-] {
  }
 
 
- /* --------- Carousel ----------- */
-.slider {
-  margin-bottom: 30px;
-}
-
-.slick-slide {
-  display: block;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-/* BUBBLE QUOTE */
-
+ /* --------- Slider ----------- */
 .bubble blockquote {
 	margin: 10px 10px 0;
-	background: white;
+	background: #425365;
 	padding: 60px;
 	position: relative;
 	border: none;
 	border-radius: 8px;
 	font-size: 1.25em;
-	color: #1e528e;
+	color: white;
 }
 .bubble blockquote:before, .bubble blockquote:after {
 	content: "\201C";
@@ -413,7 +400,7 @@ form [class*=col-] {
 	font-size: 80px;
 	padding: 10px;
 	line-height: 1;
-	color: #1e528e;
+	color: white;
 }
 .bubble blockquote:before {
 	top: 0;
@@ -429,14 +416,14 @@ form [class*=col-] {
 	height: 0;
 	border-left: 0 solid transparent;
 	border-right: 20px solid transparent;
-	border-top: 20px solid #fff;
+	border-top: 20px solid #425365;
 	margin: 0 0 0 60px;
 	margin-bottom: 10px;
 }
 .bubble cite {
 	padding-left: 20px;
 	font-size: 1.25em;
-  color:#f7f7f7;
+  color:#425365;
 }
 
 

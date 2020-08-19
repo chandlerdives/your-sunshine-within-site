@@ -11,6 +11,7 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
   $('.quotes').slick({
     dots: true,
     infinite: true,
@@ -20,7 +21,3 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true
   });
-
-
-
-});
