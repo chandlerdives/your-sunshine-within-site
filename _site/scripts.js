@@ -11,8 +11,11 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $('.quotes').slick({
+  $( document ).ready(function() {
+    $('.no-fouc').removeClass('no-fouc');
+  });
+
+  $(".quotes").slick({
     dots: true,
     infinite: true,
     autoplay: true,
@@ -21,3 +24,14 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true
   });
+
+  $(".slicker").slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    speed: 800,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
